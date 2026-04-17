@@ -184,6 +184,7 @@ class AskResponse(BaseModel):
 def root():
     return {
         "app": settings.app_name,
+        "author": "vodaiphuoc",
         "version": settings.app_version,
         "environment": settings.environment,
         "endpoints": {
