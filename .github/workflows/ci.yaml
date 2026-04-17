@@ -10,7 +10,10 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: 06-lab-complete
+    
     steps:
       - uses: actions/checkout@v4
       - run: pip install ruff
