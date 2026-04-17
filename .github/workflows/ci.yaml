@@ -20,9 +20,7 @@ jobs:
       - run: ruff check .
 
   test:
-
     runs-on: ubuntu-latest
-
     defaults:
       run:
         working-directory: 06-lab-complete
@@ -47,7 +45,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -v
+          python -m pytest -v
 
 
   docker-build:
