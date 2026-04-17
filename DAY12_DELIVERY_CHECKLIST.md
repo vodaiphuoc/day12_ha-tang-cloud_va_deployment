@@ -13,7 +13,7 @@ Submit a **GitHub repository** containing:
 ### 1. Mission Answers (40 points)
 
 Create a file `MISSION_ANSWERS.md` with your answers to all exercises:
-
+[MISSION_ANSWERS.md](./MISSION_ANSWERS.md)
 ```markdown
 # Day 12 Lab - Mission Answers
 
@@ -103,7 +103,7 @@ your-repo/
 ### 3. Service Domain Link
 
 Create a file `DEPLOYMENT.md` with your deployed service information:
-
+[DEPLOYMENT.md](./DEPLOYMENT.md)
 ```markdown
 # Deployment Information
 
