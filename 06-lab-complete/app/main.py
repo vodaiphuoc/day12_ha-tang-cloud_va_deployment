@@ -145,8 +145,8 @@ async def request_middleware(request: Request, call_next):
         # Security headers
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["X-Frame-Options"] = "DENY"
-        # print('type response.headers: ',type(response.headers))
-        # response.headers.pop("server", None)
+        
+        # remove using pop method
         if "server" in response.headers:
             del response.headers["server"]
         
