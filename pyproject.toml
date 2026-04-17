@@ -1,0 +1,9 @@
+[tool.ruff]
+exclude = [
+    ".venv",
+    "__pycache__",
+]
+
+[tool.ruff.per-file-ignores]
+"06-lab-complete/utils/mock_llm.py" = ["F401"]
+"check_production_ready.py" = ["F841"]

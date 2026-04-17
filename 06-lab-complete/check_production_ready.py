@@ -8,8 +8,6 @@ Output: checklist với ✅ / ❌ cho từng item.
 """
 import os
 import sys
-import json
-import subprocess
 
 
 def check(name: str, passed: bool, detail: str = "") -> dict:
