@@ -8,6 +8,25 @@ on:
     branches: [main]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 06-lab-complete
+    
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install ruff
+      - run: ruff check . --fix
+
+      - name: Commit fixes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "auto-fix lint"
+          git push
+
   test:
 
     runs-on: ubuntu-latest
